@@ -16,7 +16,7 @@ function App() {
   const [message, setMessage] = useState(null);
   const [isFetching, setIsFetching] = useState(false);
   const [url, setUrl] = useState('/api');
-  
+
   const fetchData = useCallback(() => {
     fetch(url)
       .then(response => {
@@ -61,7 +61,7 @@ function App() {
             {' »'}</Text>
             <Link
               color="teal.500"
-              href="https://chakra-ui.com"
+              href={url}
               fontSize="2xl"
               target="_blank"
               rel="noopener noreferrer"
